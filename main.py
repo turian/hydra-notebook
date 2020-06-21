@@ -14,8 +14,8 @@
 # ---
 
 import hydra.experimental
-#hydra.experimental.initialize(config_path="conf")
-hydra.experimental.initialize_with_module(module="module", config_path="conf")
+hydra.experimental.initialize(config_path="conf")
+#hydra.experimental.initialize_with_module(module="module", config_path="conf")
 cfg=hydra.experimental.compose(config_name="config.yaml")
 
 
